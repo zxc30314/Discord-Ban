@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="app">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/Discord Ban.sln" web="/" />
+            <mapping local="$PROJECT_DIR$/Discord Ban/Discord Ban.csproj" web="/" />
+            <mapping local="$PROJECT_DIR$/Discord Ban/obj/Debug/net7.0/Discord Ban.GlobalUsings.g.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/Discord Ban/obj/Debug/net7.0/Discord Ban.AssemblyInfo.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/Discord Ban/obj/Debug/net7.0/Discord Ban.GeneratedMSBuildEditorConfig.editorconfig" web="/" />
+            <mapping local="$PROJECT_DIR$/Discord Ban/Program.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/Discord Ban/Dockerfile" web="/" />
+            <mapping local="$PROJECT_DIR$/../../../../Program Files/dotnet/sdk/7.0.102/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_7_default.editorconfig" web="/" />
+            <mapping local="$PROJECT_DIR$/.dockerignore" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

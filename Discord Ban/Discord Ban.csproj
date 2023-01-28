@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <RootNamespace>Discord_Ban</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="DSharpPlus" Version="4.3.0" />
+      <PackageReference Include="DSharpPlus.SlashCommands" Version="4.3.0" />
+      <PackageReference Include="DSharpPlus.VoiceNext" Version="4.3.0" />
+      <PackageReference Include="DSharpPlus.VoiceNext.Natives" Version="1.0.0" />
+    </ItemGroup>
+
+</Project>

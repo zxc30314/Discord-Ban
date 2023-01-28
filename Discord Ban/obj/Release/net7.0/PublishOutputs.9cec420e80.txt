@@ -1,0 +1,17 @@
+C:\Users\zxc30\RiderProjects\Discord Ban\Discord Ban\bin\Release\net7.0\publish\Discord Ban.exe
+C:\Users\zxc30\RiderProjects\Discord Ban\Discord Ban\bin\Release\net7.0\publish\Discord Ban.dll
+C:\Users\zxc30\RiderProjects\Discord Ban\Discord Ban\bin\Release\net7.0\publish\Discord Ban.deps.json
+C:\Users\zxc30\RiderProjects\Discord Ban\Discord Ban\bin\Release\net7.0\publish\Discord Ban.runtimeconfig.json
+C:\Users\zxc30\RiderProjects\Discord Ban\Discord Ban\bin\Release\net7.0\publish\Discord Ban.pdb
+C:\Users\zxc30\RiderProjects\Discord Ban\Discord Ban\bin\Release\net7.0\publish\DSharpPlus.dll
+C:\Users\zxc30\RiderProjects\Discord Ban\Discord Ban\bin\Release\net7.0\publish\DSharpPlus.SlashCommands.dll
+C:\Users\zxc30\RiderProjects\Discord Ban\Discord Ban\bin\Release\net7.0\publish\DSharpPlus.VoiceNext.dll
+C:\Users\zxc30\RiderProjects\Discord Ban\Discord Ban\bin\Release\net7.0\publish\Emzi0767.Common.dll
+C:\Users\zxc30\RiderProjects\Discord Ban\Discord Ban\bin\Release\net7.0\publish\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\zxc30\RiderProjects\Discord Ban\Discord Ban\bin\Release\net7.0\publish\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\zxc30\RiderProjects\Discord Ban\Discord Ban\bin\Release\net7.0\publish\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\zxc30\RiderProjects\Discord Ban\Discord Ban\bin\Release\net7.0\publish\Newtonsoft.Json.dll
+C:\Users\zxc30\RiderProjects\Discord Ban\Discord Ban\bin\Release\net7.0\publish\runtimes\win-x64\native\libopus.dll
+C:\Users\zxc30\RiderProjects\Discord Ban\Discord Ban\bin\Release\net7.0\publish\runtimes\win-x64\native\libsodium.dll
+C:\Users\zxc30\RiderProjects\Discord Ban\Discord Ban\bin\Release\net7.0\publish\runtimes\win-x86\native\libopus.dll
+C:\Users\zxc30\RiderProjects\Discord Ban\Discord Ban\bin\Release\net7.0\publish\runtimes\win-x86\native\libsodium.dll
