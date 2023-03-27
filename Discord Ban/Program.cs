@@ -18,7 +18,6 @@ while (true)
     new DiscordBot().Main().GetAwaiter().GetResult();
 }
 
-
 class DiscordBot
 {
     private static string _token;
@@ -59,7 +58,6 @@ class DiscordBot
                 Log.Error(slashCommandErrorEventArgs.Exception.ToString());
                 return Task.CompletedTask;
             }
-
         }
         catch (Exception e)
         {
@@ -91,7 +89,6 @@ class DiscordBot
         {
             Console.WriteLine(exception);
         }
-
     }
 }
 
@@ -125,8 +122,6 @@ public class HistoryNameManager
     }
 
     private readonly string _historyNickName = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "save", "historyNickName");
-
-
     private static HistoryNameManager instance = null;
     public static HistoryNameManager Instance = instance ??= new HistoryNameManager();
 
@@ -143,7 +138,6 @@ public class HistoryNameManager
     {
         foreach (var item in List)
         {
-
             var serializeObject = JsonConvert.SerializeObject(item.Value, Formatting.Indented);
 
             if (!Directory.Exists(_historyNickName))
@@ -157,7 +151,6 @@ public class HistoryNameManager
 
         await Task.CompletedTask;
     }
-
 
     private async Task<Dictionary<ulong, DataBase>> Load()
     {
@@ -181,7 +174,6 @@ public class HistoryNameManager
 
         return dictionary;
     }
-
 
     public async Task<HashSet<string>> GetHistoryNickName(DiscordGuild guild, DiscordUser user)
     {
@@ -246,7 +238,6 @@ class BlackManager
 
         public DataBase()
         {
-
         }
 
         public DataBase(List<UserData> userData)
@@ -256,7 +247,6 @@ class BlackManager
     }
 
     private readonly string _banSaveFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "save", "ban");
-
     private readonly Dictionary<ulong, Timer> _timers = new();
     private static BlackManager instance = null;
     public static BlackManager Instance = instance ??= new BlackManager();
@@ -276,7 +266,6 @@ class BlackManager
     {
         foreach (var item in List)
         {
-
             var serializeObject = JsonConvert.SerializeObject(item.Value, Formatting.Indented);
 
             if (!Directory.Exists(_banSaveFolder))
@@ -290,7 +279,6 @@ class BlackManager
 
         await Task.CompletedTask;
     }
-
 
     private async Task<Dictionary<ulong, DataBase>> Load()
     {
@@ -342,7 +330,6 @@ class BlackManager
 
         await DoBlock(ctx, user);
         await Save();
-
     }
 
     public async Task Remove(InteractionContext ctx, DiscordUser user)
@@ -354,6 +341,7 @@ class BlackManager
         }
 
         await Save();
+        await RemoveTimer(user.Id);
         await Task.CompletedTask;
     }
 
@@ -399,7 +387,6 @@ class BlackManager
         userData = null;
         if (List.TryGetValue(guild.Id, out var value))
         {
-
             return (userData = value.UserData.FirstOrDefault(x => x.Userid == user.Id)) != null;
         }
 
@@ -451,14 +438,12 @@ class BlackManager
                 {
                     Console.WriteLine(exception);
                 }
-
             }
         }
     }
 
     private async Task<bool> RemoveFromTime(VoiceStateUpdateEventArgs e)
     {
-
         if (_timers.TryGetValue(e.User.Id, out var timer0))
         {
             await timer0.DisposeAsync();
@@ -521,6 +506,15 @@ class BlackManager
             }
         }
     }
+
+    public async Task RemoveTimer(ulong userId)
+    {
+        if (_timers.TryGetValue(userId, out var timer0))
+        {
+            await timer0.DisposeAsync();
+            _timers.Remove(userId);
+        }
+    }
 }
 
 public class Commands : ApplicationCommandModule
@@ -539,7 +533,7 @@ public class Commands : ApplicationCommandModule
     public async Task Ls(InteractionContext ctx)
     {
         var stringBuilder = new StringBuilder();
-       
+
         if (BlackManager.Instance.List.TryGetValue(ctx.Guild.Id, out var value))
         {
             if (!value.UserData.Any())
@@ -556,6 +550,7 @@ public class Commands : ApplicationCommandModule
         {
             stringBuilder.Append("black list is empty");
         }
+
         Log.Stream(stringBuilder.ToString());
         await ctx.CreateResponseAsync(stringBuilder.ToString()).ConfigureAwait(false);
     }
@@ -605,7 +600,7 @@ internal static class Log
     {
         FormatColor(text, ConsoleColor.Red, newLine);
     }
-
+    
     public static void FormatColor(string text, ConsoleColor consoleColor = ConsoleColor.Gray, bool newLine = true)
     {
         text = $"[{DateTime.Now}] {text}";
