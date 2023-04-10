@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "type": "dotnet",
+            "name": "Dotnet configuration",
+            "projectPath": "C:/Users/zxc30/Documents/GitHub/Discord-Ban/",
+            "exePath": "C:/Users/zxc30/Documents/GitHub/Discord-Ban/Exe",
+            "args": [],
+        },
+
+    ]
+}

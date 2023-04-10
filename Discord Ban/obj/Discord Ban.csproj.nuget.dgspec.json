@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zxc30\\RiderProjects\\Discord Ban\\Discord Ban\\Discord Ban.csproj": {}
+    "C:\\Users\\zxc30\\Documents\\GitHub\\Discord-Ban\\Discord Ban\\Discord Ban.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zxc30\\RiderProjects\\Discord Ban\\Discord Ban\\Discord Ban.csproj": {
+    "C:\\Users\\zxc30\\Documents\\GitHub\\Discord-Ban\\Discord Ban\\Discord Ban.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zxc30\\RiderProjects\\Discord Ban\\Discord Ban\\Discord Ban.csproj",
+        "projectUniqueName": "C:\\Users\\zxc30\\Documents\\GitHub\\Discord-Ban\\Discord Ban\\Discord Ban.csproj",
         "projectName": "Discord Ban",
-        "projectPath": "C:\\Users\\zxc30\\RiderProjects\\Discord Ban\\Discord Ban\\Discord Ban.csproj",
+        "projectPath": "C:\\Users\\zxc30\\Documents\\GitHub\\Discord-Ban\\Discord Ban\\Discord Ban.csproj",
         "packagesPath": "C:\\Users\\zxc30\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zxc30\\RiderProjects\\Discord Ban\\Discord Ban\\obj\\",
+        "outputPath": "C:\\Users\\zxc30\\Documents\\GitHub\\Discord-Ban\\Discord Ban\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\zxc30\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\zxc30\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -73,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\zxc30\\.dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

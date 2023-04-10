@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gHV0JiqejAfuyHcdxX18d5vzl3y6+jRnuc98Wtqj3Nf4lAksexvJLQDeyIeftvteBG0aZ5uySwrmNwp+YzUqiQ==",
+  "dgSpecHash": "fnCMwJi1G+kvYdvYvyqmQy/kDQprULrgXJjpniVIPt8KQoLgpxQ3z1WGqhdU0y811bhNdnGZcNv9HiP/9Cdsmg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zxc30\\RiderProjects\\Discord Ban\\Discord Ban\\Discord Ban.csproj",
+  "projectFilePath": "C:\\Users\\zxc30\\Documents\\GitHub\\Discord-Ban\\Discord Ban\\Discord Ban.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zxc30\\.nuget\\packages\\dsharpplus\\4.3.0\\dsharpplus.4.3.0.nupkg.sha512",
     "C:\\Users\\zxc30\\.nuget\\packages\\dsharpplus.slashcommands\\4.3.0\\dsharpplus.slashcommands.4.3.0.nupkg.sha512",
